@@ -1,0 +1,12 @@
+{
+  "data": [
+    {
+      "name": "Anillo1",
+      "img": "../Imagenes/Anillo.PNG"
+    },
+    {
+      "name": "Cadena",
+      "img": "../Imagenes/Cadena.PNG"
+    }
+  ]
+}

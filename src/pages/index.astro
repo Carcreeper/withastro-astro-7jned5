@@ -1,0 +1,231 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout title="Joyeria panama.">
+	<main>
+	<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Joyeria Panama</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Lo más vendido</a></li>
+                <li><a href="#menu">Sobre nosotros</a></li>
+                <li><a href="#perfil">Como llegar</a></li>
+                <li><a href="#sobre-nosotros">Blog</a></li>
+                <li><a href="#comprar">Comprar</a></li>
+                <li><a href="#blog">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+		<h1>Lo más <span class="text-gradient">vendido</span></h1>
+		<p class="instructions">
+		
+			<strong>PRODUCTOS ENCONTRADOS</strong> 
+		</p>
+		<ul role="list" class="link-card-grid">
+			<Card 
+            
+				href="https://docs.astro.build/"
+				title="ARGOLLA ESMERALDAS ORO AMARILLO"
+                
+			    
+                
+			/>
+			<Card 
+				href="https://astro.build/integrations/"
+				title="CADENA CARTIER 2 OROS"
+                
+				
+			/>
+			<Card 
+				href="https://astro.build/themes/"
+				title="CANDONGA TUBO DIAMANTADA ORO AMARILLO"
+				
+			/>
+			<Card 
+				href="https://astro.build/chat/"
+				title="ESCLAVA BEBE CORAZONES ORO AMARILLO"
+				
+			/>
+		</ul>
+
+     <section class="section-class">
+        <h2 class="text-gradient2" >Sobre nosotros</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    
+    <h2 class="text-gradient2">Sobre el oro italiano</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <section/>
+
+</body>
+	</main>
+	</body>
+</Layout>
+
+<style>
+/* Reset de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales del body */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding-top: 70px; /* Añadido para evitar que el contenido quede oculto bajo el header fijo */
+    overflow-x: hidden; /* Para evitar el desbordamiento horizontal */
+}
+
+/* Estilos del header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFD700;
+    color: black;
+    padding: 1rem 5%;
+    z-index: 1000; /* Asegurarse de que el header esté por encima de otros elementos */
+    overflow-x: hidden; /* Para evitar el desbordamiento horizontal */
+}
+
+/* Estilos del logo */
+.logo h1 {
+    font-size: 2rem;
+		align-items: center;
+		margin: 15px;
+}
+
+/* Estilos de la navegación */
+nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end; /* Mueve el ul hacia la derecha */
+		
+}
+
+nav ul {
+    
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan para evitar el desbordamiento */
+		
+}
+
+/* Estilos de los enlaces de navegación */
+nav ul li a {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+		color: black;
+		font-weight: bold;
+}
+
+/* Estilos de los enlaces de navegación al pasar el mouse */
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+/* Estilos del main */
+main {
+    margin: auto;
+    padding: 1rem;
+    width: 800px;
+    max-width: calc(100% - 2rem);
+    color: black;
+    font-size: 20px;
+    line-height: 1.6;
+    overflow-x: hidden; /* Para evitar el desbordamiento horizontal */
+}
+
+/* Estilos específicos */
+.astro-a {
+    position: absolute;
+    top: -32px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 220px;
+    height: auto;
+    z-index: -1;
+    
+}
+
+h1 {
+	 	margin-top: 1em;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 1em;
+		color: #000;
+}
+
+.text-gradient {
+    background-image: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400%;
+    background-position: 0%;
+}
+
+.text-gradient2{
+    padding: 2rem;
+    background-image: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400%;
+    background-position: 0%;
+     text-align: center;
+
+
+}
+
+.instructions {
+    
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 2rem;
+    border: 1px solid rgba(var(--accent-light), 25%);
+    background: #FFD700;
+    padding: 1 rem;
+    border-radius: 8px;
+    
+}
+
+.link-card{
+     background: black;
+     
+}
+
+.link-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+    gap: 2rem;
+    padding: 0;
+}
+
+.section-class{
+    pad
+    background-color: #FFD700;
+}
+
+</style>
